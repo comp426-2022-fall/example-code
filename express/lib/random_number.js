@@ -1,1 +1,1 @@
-// Code goes here
+return 5;
