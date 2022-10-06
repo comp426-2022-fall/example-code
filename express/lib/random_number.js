@@ -1,1 +1,3 @@
-return 5;
+function getAFive() {
+	return 5;
+}
