@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const fib = require('./lib/fib_daqichen')
 
-const port = 8080
+const port = 5000
 
 app.get('/', (req, res, next) => {
 	res.send('Hello, world!')
