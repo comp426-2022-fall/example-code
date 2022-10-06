@@ -10,3 +10,14 @@ app.get('/', (req, res, next) => {
 app.listen(port, () => {
 	console.log("Server listening on port" + port)
 })
+
+const fib = (n) => {
+  if (n == 1) {
+    return 1; }
+  if (n == 2) { return 1; }
+  return fib(n-1) + fib(n-2);
+}
+
+app.get('/fib', (req, res, next) => {
+       res.send('Fib implementation to be completed')
+})
