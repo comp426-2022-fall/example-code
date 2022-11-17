@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const fib = require('./lib/fib_daqichen')
 
 const port = 5000
 
@@ -10,3 +11,8 @@ app.get('/', (req, res, next) => {
 app.listen(port, () => {
 	console.log("Server listening on port" + port)
 })
+
+app.get('/fib', (req, res, next) => {
+  const num = req.query.n;
+  res.send(`Fib number for ${num} is ${fib(num)}`)
+}) 
